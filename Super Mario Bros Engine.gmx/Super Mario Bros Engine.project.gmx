@@ -133,10 +133,18 @@
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\spr_qblock</sprite>
+      <sprite>sprites\spr_qblock_castle</sprite>
+      <sprite>sprites\spr_qblock_blue</sprite>
       <sprite>sprites\spr_qblock_hidden</sprite>
       <sprite>sprites\spr_qblock_empty</sprite>
+      <sprite>sprites\spr_qblock_empty_castle</sprite>
+      <sprite>sprites\spr_qblock_empty_blue</sprite>
       <sprite>sprites\spr_brick</sprite>
+      <sprite>sprites\spr_brick_castle</sprite>
+      <sprite>sprites\spr_brick_blue</sprite>
       <sprite>sprites\spr_shard</sprite>
+      <sprite>sprites\spr_shard_castle</sprite>
+      <sprite>sprites\spr_shard_blue</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Bowser">
@@ -151,10 +159,17 @@
         <sprite>sprites\spr_bowser_fire</sprite>
       </sprites>
       <sprite>sprites\spr_goomba</sprite>
+      <sprite>sprites\spr_goomba_blue</sprite>
+      <sprite>sprites\spr_goomba_castle</sprite>
       <sprite>sprites\spr_goomba_sq</sprite>
+      <sprite>sprites\spr_goomba_sq_blue</sprite>
+      <sprite>sprites\spr_goomba_sq_castle</sprite>
       <sprite>sprites\spr_koopa</sprite>
+      <sprite>sprites\spr_koopa_blue_castle</sprite>
       <sprite>sprites\spr_parakoopa</sprite>
+      <sprite>sprites\spr_parakoopa_blue_castle</sprite>
       <sprite>sprites\spr_shell</sprite>
+      <sprite>sprites\spr_shell_blue_castle</sprite>
       <sprite>sprites\spr_koopa_red</sprite>
       <sprite>sprites\spr_parakoopa_red</sprite>
       <sprite>sprites\spr_shell_red</sprite>
@@ -167,6 +182,7 @@
       <sprite>sprites\spr_shell_buzzy</sprite>
       <sprite>sprites\spr_spiny</sprite>
       <sprite>sprites\spr_piranhaplant</sprite>
+      <sprite>sprites\spr_piranhaplant_blue_castle</sprite>
       <sprite>sprites\spr_piranhaplant_red</sprite>
       <sprite>sprites\spr_redcheep</sprite>
       <sprite>sprites\spr_greencheep</sprite>
@@ -560,10 +576,20 @@
         <object>objects\obj_maze_block</object>
       </objects>
       <object>objects\obj_qblock</object>
+      <object>objects\obj_qblock_castle</object>
+      <object>objects\obj_qblock_blue</object>
       <object>objects\obj_qblock_coins</object>
+      <object>objects\obj_qblock_coins_castle</object>
+      <object>objects\obj_qblock_coins_blue</object>
       <object>objects\obj_qblock_hidden</object>
+      <object>objects\obj_qblock_hidden_castle</object>
+      <object>objects\obj_qblock_hidden_blue</object>
       <object>objects\obj_emptyblock</object>
+      <object>objects\obj_emptyblock_castle</object>
+      <object>objects\obj_emptyblock_blue</object>
       <object>objects\obj_brick</object>
+      <object>objects\obj_brick_castle</object>
+      <object>objects\obj_brick_blue</object>
     </objects>
     <objects name="Enemies">
       <objects name="Castle Mazes">
@@ -593,8 +619,12 @@
         <object>objects\obj_createlavabubble_hard</object>
       </objects>
       <object>objects\obj_goomba</object>
+      <object>objects\obj_goomba_blue</object>
+      <object>objects\obj_goomba_castle</object>
       <object>objects\obj_koopa</object>
+      <object>objects\obj_koopa_blue_castle</object>
       <object>objects\obj_parakoopa</object>
+      <object>objects\obj_parakoopa_blue_castle</object>
       <object>objects\obj_parakoopa_fly</object>
       <object>objects\obj_koopa_red</object>
       <object>objects\obj_parakoopa_red</object>
@@ -604,6 +634,7 @@
       <object>objects\obj_buzzybeetle</object>
       <object>objects\obj_spiny</object>
       <object>objects\obj_piranhaplant</object>
+      <object>objects\obj_piranhaplant_blue_castle</object>
       <object>objects\obj_piranhaplant_red</object>
       <object>objects\obj_piranhaplant_red_down</object>
       <object>objects\obj_blooper</object>
@@ -650,6 +681,8 @@
           <object>objects\obj_powerupparent</object>
         </objects>
         <object>objects\obj_blockparent</object>
+        <object>objects\obj_blockparent_castle</object>
+        <object>objects\obj_blockparent_blue</object>
         <object>objects\obj_platformparent</object>
         <object>objects\obj_deactivateparent</object>
       </objects>
@@ -666,6 +699,8 @@
         </objects>
         <objects name="Blocks">
           <object>objects\obj_shard</object>
+          <object>objects\obj_shard_blue</object>
+          <object>objects\obj_shard_castle</object>
           <object>objects\obj_blockcoin</object>
           <object>objects\obj_blockbumper</object>
         </objects>
@@ -674,9 +709,16 @@
             <object>objects\obj_bowser_flame</object>
           </objects>
           <object>objects\obj_enemy_dead</object>
+          <object>objects\obj_enemy_dead_blue</object>
+          <object>objects\obj_enemy_dead_castle</object>
           <object>objects\obj_enemy_stomped</object>
+          <object>objects\obj_enemy_stomped_blue</object>
+          <object>objects\obj_enemy_stomped_castle</object>
           <object>objects\obj_stomped</object>
+          <object>objects\obj_stomped_blue</object>
+          <object>objects\obj_stomped_castle</object>
           <object>objects\obj_shell</object>
+          <object>objects\obj_shell_blue_castle</object>
           <object>objects\obj_lakitu2</object>
           <object>objects\obj_lakitu_egg</object>
           <object>objects\obj_hammer</object>
