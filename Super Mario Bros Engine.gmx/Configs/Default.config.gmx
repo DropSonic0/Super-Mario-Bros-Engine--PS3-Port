@@ -403,7 +403,7 @@
     <option_ps3_package_id></option_ps3_package_id>
     <option_ps3_passcode></option_ps3_passcode>
     <option_ps3_scale>0</option_ps3_scale>
-    <option_ps3_texture_page>2048</option_ps3_texture_page>
+    <option_ps3_texture_page>4096</option_ps3_texture_page>
     <option_ps3_version>1.00</option_ps3_version>
     <option_ps4_build_version>0</option_ps4_build_version>
     <option_ps4_displaycursor>0</option_ps4_displaycursor>
@@ -485,7 +485,7 @@
     <option_tvos_splash_png>Configs\Default\tvos\splash.png</option_tvos_splash_png>
     <option_tvos_splash_time>0</option_tvos_splash_time>
     <option_tvos_texture_page>2048</option_tvos_texture_page>
-    <option_use_fast_collision>False</option_use_fast_collision>
+    <option_use_fast_collision>True</option_use_fast_collision>
     <option_use_new_audio>True</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
     <option_version>100</option_version>
@@ -672,10 +672,10 @@
     <option_xbone_require_xbox_live>True</option_xbone_require_xbox_live>
     <option_xbone_revision_version>0</option_xbone_revision_version>
     <option_xbone_scale>-1</option_xbone_scale>
-    <option_xbone_service_config_id></option_xbone_service_config_id>
+    <option_xbone_service_config_id>1234ABCD-1234-1234-1234-123456789ABC</option_xbone_service_config_id>
     <option_xbone_splash_screen_colour>#FFFFFF</option_xbone_splash_screen_colour>
     <option_xbone_texture_page>1024</option_xbone_texture_page>
-    <option_xbone_title_id></option_xbone_title_id>
+    <option_xbone_title_id>1234ABCD</option_xbone_title_id>
   </Options>
   <ConfigConstants/>
 </Config>
