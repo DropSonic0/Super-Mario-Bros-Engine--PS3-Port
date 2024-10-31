@@ -84,9 +84,6 @@ instance_destroy();
             <kind>1</kind>
             <string>///Draw the 1up
 
-//Set up the palette
-pal_swap_set(pal_1up, global.skin, false);
-
 //Draw sprite
 draw_sprite(sprite_index, -1, round(x), round(y)+1);
 

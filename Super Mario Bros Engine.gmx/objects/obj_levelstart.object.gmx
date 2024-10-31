@@ -337,10 +337,10 @@ draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 
 //Draw face frame
-draw_sprite(spr_hud_ls_face, global.player, view_xview[0]+88, view_yview[0]+80);
+draw_sprite(spr_hud_ls_face, global.player, view_xview[0]+168, view_yview[0]+80);
 
 //Draw current lives
-draw_text(view_xview[0]+128, view_yview[0]+88, '* ' + string_format(lives, 3, 0));
+draw_text(view_xview[0]+210, view_yview[0]+88, '* ' + string_format(lives, 3, 0));
 
 //Draw level preview
 draw_sprite(spr_hud_ls_preview, 0, view_xview[0]+(view_wview[0]/2)-65, view_yview[0]+112);

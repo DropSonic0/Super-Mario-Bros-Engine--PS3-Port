@@ -43,9 +43,6 @@ handicap_stomp = 4;
 //Do not allow combos
 allowcombo = 0;
 
-//Palette
-palette_index = noone;
-
 //Do not animate
 image_speed = 0;
 image_index = 0;
@@ -115,7 +112,7 @@ if (x &gt; view_xview[view_current] - 16)
     alarm[0] = 60;
     
     //Set the horizontal speed
-    hspeed = -1.2;
+    hspeed = -1.3;
 }
 else
     alarm[10] = 1;
@@ -186,7 +183,7 @@ if (x &gt; view_xview[0]-16)
 &amp;&amp; (goaway == 0) {
 
     //If there's 3 or more spinies in view
-    if (instance_number(obj_spiny) &gt;= 3)
+    if (instance_number(obj_spiny) &gt;= 7)
         image_index = 1;
         
     //Otherwise, if the enemy is overlapping a solid
@@ -259,9 +256,9 @@ if (instance_number(obj_playerparent) &gt; 0)
     
     //Turn around
     if (x &lt; view_xview[view_current] + 40)
-        hspeed = 1.2;    
-    else if (x &gt; view_xview[view_current] + 216)
-        hspeed = -1.2;
+        hspeed = 1.8;    
+    else if (x &gt; view_xview[view_current] + 424)
+        hspeed = -1.8;
         
     //Round x position
     x = round(x);

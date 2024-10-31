@@ -126,7 +126,7 @@ for (var i=0; i&lt;length; i++) {
 
 //Create a empty block
 if (createblock == true)
-    myblock = instance_create(xstart, ystart, obj_emptyblock);
+    myblock = instance_create(xstart, ystart, obj_emptyblock_castle);
 </string>
           </argument>
         </arguments>

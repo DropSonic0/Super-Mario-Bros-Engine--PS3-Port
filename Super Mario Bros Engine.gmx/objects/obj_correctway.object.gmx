@@ -28,48 +28,6 @@
             <string>///Castle Maze - Correct Way
 
 check = 0;
-parent = noone;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Castle maze logic
-
-//If the player does not exist, exit the event
-if (!instance_exists(obj_playerparent))
-    exit;
-    
-//Otherwise, if the way has been picked correctly
-else if (check == 1) {
-
-    //If the player x is greater than this object x
-    if (instance_number(obj_playerparent) &gt; 0) {
-    
-        if (obj_playerparent.x &lt; x+8) {
-        
-            check = 0;
-            parent.numb--;
-        }
-    }
-}
 </string>
           </argument>
         </arguments>
@@ -98,14 +56,14 @@ if (check == 0)
 &amp;&amp; (other.x &gt; x+8) 
 &amp;&amp; (global.fail == false) {
 
-    //Play 'Correct' sound
+    //Play 'Wrong' sound
     audio_play_sound(snd_correct, 0, false);
+    
+    //Maze has been failed
+    global.fail = false;
 
     //Check it
     check = 1;
-    
-    //Increment parent numb
-    with (parent) numb++;
 }
 </string>
           </argument>

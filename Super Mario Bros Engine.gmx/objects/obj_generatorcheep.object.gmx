@@ -40,9 +40,6 @@ handicap_stomp = 1;
 //Do not allow combo
 allowcombo = 0;
 
-//Palette
-palette_index = noone;
-
 //Facing direction
 xscale = 1;
 

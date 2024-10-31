@@ -79,7 +79,7 @@ if (instance_number(obj_playerparent) &gt; 0)
         instance_destroy();
     else {
     
-        with (instance_create(view_xview[view_current] + 384, view_yview[view_current] + 48, obj_lakitu2)) 
+        with (instance_create(view_xview[view_current] + 584, view_yview[view_current] + 48, obj_lakitu2)) 
             eggmode = other.eggmode;
     }
 }
@@ -127,7 +127,7 @@ if (instance_number(obj_playerparent) &gt; 0)
         instance_destroy();
     else {
     
-        with (instance_create(view_xview[view_current] + 384, view_yview[view_current] + 48, obj_lakitu2)) 
+        with (instance_create(view_xview[view_current] + 684, view_yview[view_current] + 48, obj_lakitu2)) 
             eggmode = other.eggmode;
     }
 }

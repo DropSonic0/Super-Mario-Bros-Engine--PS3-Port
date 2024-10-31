@@ -120,7 +120,7 @@ if (ready == 1) {
             <string>///Congratulate the player
 
 //Draw player
-draw_sprite_ext(spr_ending, global.player, view_xview[0]+80, view_yview[0]+view_hview[0], 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_ending, global.player, view_xview[0]+180, view_yview[0]+view_hview[0], 1, 1, 0, c_white, 1);
 
 //Set the text colour
 draw_set_color(c_white);
@@ -131,27 +131,27 @@ draw_set_alpha(1);
 //Display 'THANK YOU MARIO!'
 if (global.hardmode == 0) { //If hard mode is not selected
       
-    draw_text(16, 16, "WAY TO GO!");
-    draw_text(16, 32, "YOU SAVED THE #MUSHROOM KINGDOM!");    
-    draw_text(16, 64, "NOW TRY TO BEAT THE GAME ON #HARD MODE.");
-    draw_text(16, 104, "THANK YOU FOR PLAYING!.");    
+    draw_text(116, 16, "WAY TO GO!");
+    draw_text(116, 32, "YOU SAVED THE #MUSHROOM KINGDOM!");    
+    draw_text(116, 64, "NOW TRY TO BEAT THE GAME ON #HARD MODE.");
+    draw_text(116, 104, "THANK YOU FOR PLAYING!.");    
 }
 
 //Otherwise, if hard mode is selected.
 else {
 
-    draw_text(16, 16, "WAY TO GO!");
-    draw_text(16, 32, "YOU SAVED THE #MUSHROOM KINGDOM!");    
-    draw_text(16, 64, "DID YOU GET A HIGHER SCORE #AFTER PLAYING HARD MODE?");
-    draw_text(16, 104, "THANK YOU FOR PLAYING!.");    
+    draw_text(116, 16, "WAY TO GO!");
+    draw_text(116, 32, "YOU SAVED THE #MUSHROOM KINGDOM!");    
+    draw_text(116, 64, "DID YOU GET A HIGHER SCORE #AFTER PLAYING HARD MODE?");
+    draw_text(116, 104, "THANK YOU FOR PLAYING!.");    
 }
 
 //Draw score and high-score
-draw_text(200, 136, "SCORE");
-draw_text(184, 152, string_add_zeros(score, 7));
+draw_text(284, 136, "SCORE");
+draw_text(284, 152, string_add_zeros(score, 7));
 
-draw_text(176, 168, "HI-SCORE");
-draw_text(184, 184, string_add_zeros(obj_persistent.highscore, 7));
+draw_text(276, 168, "HI-SCORE");
+draw_text(284, 184, string_add_zeros(obj_persistent.highscore, 7));
 </string>
           </argument>
         </arguments>

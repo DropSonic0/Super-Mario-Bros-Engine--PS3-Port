@@ -211,10 +211,10 @@ audio_stop_sound(bgm_gameover);
 event_inherited();
 
 //Draw screen
-draw_sprite_ext(spr_hud_gameover, global.player, 0, 0, 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_hud_gameover, global.player, 78, 0, 1, 1, 0, c_white, 1);
 
 //Draw choice
-draw_sprite_ext(spr_hud_gameover_cursor, 0, view_xview[0]+68, view_yview[0]+102+(choice*16), 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_hud_gameover_cursor, 0, view_xview[0]+136, view_yview[0]+102+(choice*16), 1, 1, 0, c_white, 1);
 </string>
           </argument>
         </arguments>
