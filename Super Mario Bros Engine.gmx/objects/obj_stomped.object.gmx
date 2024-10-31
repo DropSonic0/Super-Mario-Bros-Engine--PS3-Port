@@ -121,9 +121,6 @@ vspeed = 0;
             <kind>1</kind>
             <string>///Draw the pancake
 
-//Set up the palette
-pal_swap_set(pal_goomba, global.skin, false);
-
 //Draw sprite
 draw_sprite(sprite_index, -1, round(x), round(y));
 

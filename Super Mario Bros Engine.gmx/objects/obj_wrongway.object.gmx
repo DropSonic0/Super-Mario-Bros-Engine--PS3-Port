@@ -60,7 +60,7 @@ if (check == 0)
     audio_play_sound(snd_wrong, 0, false);
     
     //Maze has been failed
-    global.fail = true;
+    global.fail = false;
 
     //Check it
     check = 1;

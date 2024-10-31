@@ -97,8 +97,8 @@ x = view_xview[view_current];
 //Prevent the effect from appearing outside the view
 if (_xx &lt; 2)
     _xx = 2;
-else if (_xx &gt; 236)
-    _xx = 236;
+else if (_xx &gt; 424)
+    _xx = 424;
 
 //Prevent the effect from going too high on the screen
 if (y &lt; view_yview[view_current]+40)

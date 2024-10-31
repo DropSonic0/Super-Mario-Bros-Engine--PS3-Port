@@ -58,7 +58,7 @@ if (obj_persistent.gameclear == true) {
     
     //Menu 2: Difficulty
     menu[2,0] = 2;
-    menu[2,1] = " EASY";
+    menu[2,1] = " NORMAL";
     menu[2,2] = " HARD";
 }
 
@@ -75,6 +75,11 @@ else {
     menu[1,0] = 2;
     menu[1,1] = " MARIO GAME";
     menu[1,2] = " LUIGI GAME";
+
+     //Menu 2: Difficulty
+    menu[2,0] = 2;
+    menu[2,1] = " NORMAL";
+    menu[2,2] = " HARD";
 }
 </string>
           </argument>
@@ -420,19 +425,19 @@ draw_set_alpha(1);
 for (var i=1; i&lt;=menu[page,0]; i++) {
     
     //Draw the text...
-    draw_text(view_xview[0]+80, view_yview[0]+144+(12*(i-1)),menu[page,i]);
+    draw_text(view_xview[0]+150, view_yview[0]+144+(12*(i-1)),menu[page,i]);
     
     //...and draw a arrow next to the selected option 
     if (i == current)
-        draw_sprite_ext(spr_hud_title_cursor, -1, view_xview[0]+72, view_yview[0]+144+(12*(i-1)), 1, 1, 0, c_white, 1);
+        draw_sprite_ext(spr_hud_title_cursor, -1, view_xview[0]+142, view_yview[0]+144+(12*(i-1)), 1, 1, 0, c_white, 1);
 }
 
 //Draw highscore
-draw_text(view_xview[0]+80, view_yview[0]+192, "TOP- " + string_add_zeros(obj_persistent.highscore, 6));
+draw_text(view_xview[0]+150, view_yview[0]+192, "TOP- " + string_add_zeros(obj_persistent.highscore, 6));
 
 //Draw Mario &amp; Luigi
-draw_sprite(scr_mario_walk(), 0, 40, 193);
-draw_sprite_ext(scr_luigi_walk(), 0, 216, 193, -1, 1, 0, c_white, 1);
+draw_sprite(scr_mario_walk(), 0, 120, 193);
+draw_sprite_ext(scr_luigi_walk(), 0, 287, 193, -1, 1, 0, c_white, 1);
 </string>
           </argument>
         </arguments>

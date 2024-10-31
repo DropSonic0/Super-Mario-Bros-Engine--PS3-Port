@@ -302,18 +302,18 @@ draw_set_alpha(1);
 if (display &gt; 0) {
 
     if (global.player == 0)
-        draw_text(view_xview[0]+128,view_yview[0]+72,string_upper("THANK YOU MARIO!"));
+        draw_text(view_xview[0]+200,view_yview[0]+72,string_upper("THANK YOU MARIO!"));
     else
-        draw_text(view_xview[0]+128,view_yview[0]+72,string_upper("THANK YOU LUIGI!"));
+        draw_text(view_xview[0]+200,view_yview[0]+72,string_upper("THANK YOU LUIGI!"));
 }
     
 //Display 'BUT OUR PRINCESS'
 if (display &gt; 1)
-    draw_text(view_xview[0]+128,view_yview[0]+104,string_upper("BUT OUR PRINCESS"));    
+    draw_text(view_xview[0]+200,view_yview[0]+104,string_upper("BUT OUR PRINCESS"));    
 
 //Display 'IS IN ANOTHER CASTLE'
 if (display &gt; 2)
-    draw_text(view_xview[0]+128,view_yview[0]+120,string_upper("IS IN ANOTHER CASTLE!"));      
+    draw_text(view_xview[0]+200,view_yview[0]+120,string_upper("IS IN ANOTHER CASTLE!"));      
 
 //Re-align the text
 draw_set_valign(fa_top);

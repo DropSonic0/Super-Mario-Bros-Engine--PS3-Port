@@ -108,7 +108,7 @@ if (instance_exists(obj_playerparent)) {
 draw_set_blend_mode(bm_add);
 
 //Draw background
-draw_sprite_ext(spr_underwater, anim, view_xview[view_current], y+8, 1.5, 1, 0, c_white, 1);
+draw_sprite_ext(spr_underwater, anim, view_xview[view_current], y+8, 1.7, 2, 0, c_white, 1);
 
 //Draw the top
 for (i=0; i&lt;room_width/32; i++) {

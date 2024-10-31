@@ -27,9 +27,6 @@
             <kind>1</kind>
             <string>///An sprouting item
 
-//Palette
-palette_index = noone;
-
 //Animate
 image_speed = 0;
 
@@ -196,12 +193,6 @@ else if (sprite_index == spr_poison)
           <argument>
             <kind>1</kind>
             <string>///Draw item
-
-//If the sprite has a palette
-if (palette_index != noone) {
-
-    pal_swap_set(palette_index, global.skin, false);
-}
 
 //Draw it
 draw_sprite_part_ext(sprite_index, -1, 0, 0, 16, ystart-y, round(x)-8, y, 1, 1, c_white, 1);

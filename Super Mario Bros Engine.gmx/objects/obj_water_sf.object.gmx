@@ -88,10 +88,10 @@ var ix = view_xview[view_current]-16;
 var iy = ystart;
 
 //Width
-var iw = 264;
+var iw = 424;
 
 //Height
-var ih = 224;
+var ih = 240;
 
 //Draw only if the y position is above the bottom boundary
 if (iy &lt; view_yview+view_hview) {

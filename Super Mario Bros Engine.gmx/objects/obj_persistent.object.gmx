@@ -50,10 +50,10 @@ port_x = 0;
 port_y = 0;
 
 //Game width
-global.gw = 256;
+global.gw = 424;
 
 //Game height
-global.gh = 224;
+global.gh = 240;
 
 //Message?
 message = noone;
@@ -72,6 +72,27 @@ math_set_epsilon(0.0001);
 
 //Disable application surface automatic drawing
 application_surface_draw_enable(false);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global._gp = 0;
 </string>
           </argument>
         </arguments>
@@ -306,6 +327,122 @@ view_vborder[0] = global.gh/2;
             <string>///Keep following objects activated
 
 instance_activate_object(obj_audio_loop_sound);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Detect controller
+var gp_num = gamepad_get_device_count();
+for (var i = 0; i &lt; gp_num; i++;)
+{
+    if gamepad_is_connected(i)
+    {
+    global._gp = i;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Controls
+if((gamepad_axis_value(0, gp_axislh) &lt;= -0.4) || (gamepad_button_check(0, gp_padl)))
+{
+keyboard_key_press(vk_left)
+}
+else
+{
+keyboard_key_release(vk_left)
+}
+
+if(gamepad_axis_value(0, gp_axislh) &gt;= 0.4 || gamepad_button_check(0, gp_padr))
+{
+keyboard_key_press(vk_right)
+}
+else
+{
+keyboard_key_release(vk_right)
+}
+
+if(gamepad_axis_value(0, gp_axislv) &lt;= -0.4 || gamepad_button_check(0, gp_padu))
+{
+keyboard_key_press(vk_up)
+}
+else
+{
+keyboard_key_release(vk_up)
+}
+if(gamepad_axis_value(0, gp_axislv) &gt;= 0.4 || gamepad_button_check(0, gp_padd) )
+{
+keyboard_key_press(vk_down)
+}
+else
+{
+keyboard_key_release(vk_down)
+}
+if gamepad_button_check(global._gp,gp_start)
+{
+keyboard_key_press(vk_enter)
+}
+else
+{
+keyboard_key_release(vk_enter)
+}
+if gamepad_button_check(global._gp,gp_face1)
+{
+keyboard_key_press(vk_shift)
+}
+else
+{
+keyboard_key_release(vk_shift)
+}
+if gamepad_button_check(global._gp,gp_face3)
+{
+keyboard_key_press(vk_control)
+}
+else
+{
+keyboard_key_release(vk_control)
+}
+if gamepad_button_check(global._gp,gp_select)
+{
+keyboard_key_press(vk_space)
+}
+else
+{
+keyboard_key_release(vk_space)
+}
 </string>
           </argument>
         </arguments>
@@ -699,7 +836,7 @@ else {
     filter = 2;
 
     //VSync is off by default
-    vsync = 0;
+    vsync = 1;
     
     //High score
     highscore = 0;

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -337,7 +337,7 @@ if (image_xscale == 1) {
     draw_sprite_ext(spr_hud_pause, 1, view_xview[0]+global.gw/2, view_yview[0]+global.gh/2, image_xscale, image_yscale, 0, c_white, 1);
     
     //Draw cursor
-    draw_sprite_ext(spr_hud_pause_cursor, 0, view_xview[0]+77, view_yview[0]+92+(choice*16), 1, 1, 0, c_white, 1);
+    draw_sprite_ext(spr_hud_pause_cursor, 0, view_xview[0]+155, view_yview[0]+100+(choice*16), 1, 1, 0, c_white, 1);
 }
 </string>
           </argument>

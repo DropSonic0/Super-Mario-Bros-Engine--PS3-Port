@@ -134,7 +134,7 @@ if (drawbonus == 1) {
     if (global.player == 0) {
     
         draw_background(bgr_bonus_mario, 0, 0);
-        draw_background(bgr_bonus_mario, room_width-256, 0);
+        draw_background(bgr_bonus_mario, room_width-556, 0);
     }
     
     //Otherwise, draw Luigi's face

@@ -137,11 +137,11 @@ image_index = 0;
             <kind>1</kind>
             <string>///Show coin and disclaimer
 
-draw_sprite(sprite_index, -1, 96, 17);
+draw_sprite(sprite_index, -1, 176, 17);
 
 //Show disclaimer
 if (alarm[1] &lt; 120)
-    draw_background(bgr_disclaimer, 16, 130);
+    draw_background(bgr_disclaimer, 97, 130);
 </string>
           </argument>
         </arguments>

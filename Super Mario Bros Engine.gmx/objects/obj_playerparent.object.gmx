@@ -410,12 +410,12 @@ if (vspeed &lt; 0)
     }
             
     //Check for a item block
-    var block = collision_rectangle(bbox_left,bbox_top-2,bbox_right,bbox_top,obj_blockparent,0,0);
-    
+    var block = collision_rectangle(bbox_left,bbox_top-2,bbox_right,bbox_top,obj_blockparent,0,0)
+        
     //If there's a item block in the way and this one can be hit
     if (block) 
     &amp;&amp; (block.state == 0) {
-    
+        
         //With the block
         with (block) {
         
@@ -428,8 +428,49 @@ if (vspeed &lt; 0)
             //Perform block specific events
             event_user(0);
         }
+     }
+            
+    //Check for a item block
+    var block_blue = collision_rectangle(bbox_left,bbox_top-2,bbox_right,bbox_top,obj_blockparent_blue,0,0)
+        
+    //If there's a item block in the way and this one can be hit
+    if (block_blue) 
+    &amp;&amp; (block_blue.state == 0) {
+        
+        //With the block
+        with (block_blue) {
+        
+            //Block has been hit
+            state = 1;
+            
+            //Bump the block
+            vspeed = -2;
+            
+            //Perform block specific events
+            event_user(0);
+        }
     }
     
+    //Check for a item block
+    var block_castle = collision_rectangle(bbox_left,bbox_top-2,bbox_right,bbox_top,obj_blockparent_castle,0,0)
+        
+    //If there's a item block in the way and this one can be hit
+    if (block_castle) 
+    &amp;&amp; (block_castle.state == 0) {
+        
+        //With the block
+        with (block_castle) {
+        
+            //Block has been hit
+            state = 1;
+            
+            //Bump the block
+            vspeed = -2;
+            
+            //Perform block specific events
+            event_user(0);
+        }
+    }
     //Stop vertical movement
     vspeed = 0;
     
@@ -437,7 +478,6 @@ if (vspeed &lt; 0)
     if (state == cs_jump)
         audio_play_sound(snd_bump, 0, false);
 }
-
 //If the player is not climbing
 if (state != cs_climb) {
 

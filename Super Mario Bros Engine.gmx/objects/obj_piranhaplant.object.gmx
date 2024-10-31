@@ -40,9 +40,6 @@ handicap_stomp = 0;
 //Allow combo
 allowcombo = 1;
 
-//Palette
-palette_index = pal_piranhaplant;
-
 //Facing direction
 xscale = 1;
 
@@ -294,12 +291,6 @@ if (global.hardmode == true) {
           <argument>
             <kind>1</kind>
             <string>///Draw Piranha Plant
-
-//Set up the palette
-if (palette_index != noone) {
-
-    pal_swap_set(palette_index, global.skin, false);
-}
 
 //Draw sprite
 draw_sprite_ext(sprite_index, -1, round(x), round(y), xscale, image_yscale, 0, c_white, 1);

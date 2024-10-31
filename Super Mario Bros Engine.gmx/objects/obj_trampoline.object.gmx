@@ -255,9 +255,6 @@ else if (sprite_index == spr_trampoline_end) {
             <kind>1</kind>
             <string>///Draw trampoline
 
-//Set up the palette
-pal_swap_set(pal_blocks, global.skin, false);
-
 //Draw sprite
 draw_sprite(sprite_index, -1, round(x), round(y));
 
