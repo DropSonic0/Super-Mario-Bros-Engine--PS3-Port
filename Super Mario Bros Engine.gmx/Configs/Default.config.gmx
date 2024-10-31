@@ -217,7 +217,7 @@
     <option_facebook_app_display_name></option_facebook_app_display_name>
     <option_facebook_appid></option_facebook_appid>
     <option_facebook_enable>false</option_facebook_enable>
-    <option_fast_collision_compatibility>False</option_fast_collision_compatibility>
+    <option_fast_collision_compatibility>True</option_fast_collision_compatibility>
     <option_freeze>false</option_freeze>
     <option_frequency>0</option_frequency>
     <option_frontimage>nil</option_frontimage>

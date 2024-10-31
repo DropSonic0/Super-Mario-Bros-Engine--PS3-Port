@@ -120,7 +120,6 @@
     <instance objName="obj_bridge" x="800" y="176" name="inst_339F299F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lava" x="688" y="224" name="inst_A452148E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lava" x="720" y="224" name="inst_22161987" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_qblock_castle" x="112" y="160" name="inst_A9696183" locked="0" code="sprout = cs_starman;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bridge" x="816" y="176" name="inst_C5862967" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bridge" x="832" y="176" name="inst_CA795E2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bridge" x="848" y="176" name="inst_5772CE2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
