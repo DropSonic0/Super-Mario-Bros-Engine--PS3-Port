@@ -911,11 +911,6 @@
       </rooms>
       <room>rooms\rm_ending</room>
     </rooms>
-    <rooms name="Templates">
-      <room>rooms\rm_template</room>
-      <room>rooms\rm_template_sky</room>
-      <room>rooms\rm_template_cutscene</room>
-    </rooms>
     <rooms name="Event Screens">
       <room>rooms\rm_gameover</room>
       <room>rooms\rm_timeup</room>
