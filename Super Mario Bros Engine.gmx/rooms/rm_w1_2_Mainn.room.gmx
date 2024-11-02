@@ -6,7 +6,7 @@
   <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
-  <speed>50</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
@@ -597,7 +597,6 @@
     <instance objName="obj_piranhaplant_blue_castle" x="2864" y="192" name="inst_3970FFD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_piranhaplant_blue_castle" x="2928" y="192" name="inst_5EB014C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_piranhaplant_blue_castle" x="2992" y="192" name="inst_0ACF36B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bganimator" x="16" y="0" name="inst_86F44AF3" locked="0" code="bg_index = 1;&#xA;bg_frame[0] = bgr_underground;&#xA;bg_frame[1] = bgr_underground_b;&#xA;bg_frame[2] = bgr_underground_c;&#xA;bg_frame[3] = bgr_underground_d;&#xA;bg_frame[4] = bgr_underground_e;&#xA;bg_frame[5] = bgr_underground_f;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_main" x="272" y="208" w="16" h="16" xo="512" yo="128" id="10001900" name="inst_B6AB3F58" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
